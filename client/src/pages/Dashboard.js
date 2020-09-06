@@ -20,10 +20,11 @@ const Dashboard = ({
         <FaBars />
       </div>
       <header>
-        {/* <h1>
-          <img width={80} src={reactLogo} alt="react logo" /> {intl.formatMessage({ id: 'title' })}
-        </h1> */}
-        <p>{intl.formatMessage({ id: 'description' })}</p>
+        <h1>
+          {/* <img width={80} src={reactLogo} alt="react logo" />  */}
+          {intl.formatMessage({ id: 'Dashboard' })}
+        </h1>
+        <p>{intl.formatMessage({ id: 'Budget View, A financial plan application for everyone.' })}</p>
         <div className="social-bagdes">
           <a
             href="https://github.com/azouaoui-med/react-pro-sidebar"
@@ -90,22 +91,22 @@ const Dashboard = ({
       <footer>
         <small>
           © 2020 made with <FaHeart style={{ color: 'red' }} /> by -{' '}
-          <a target="_blank" rel="noopener noreferrer" href="https://azouaoui.netlify.com">
-            Mohamed Azouaoui
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/skip1113">
+            Skip Khamvongsa
           </a>
         </small>
         <br />
         <div className="social-bagdes">
-          <a href="https://github.com/azouaoui-med" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/skip1113/budget-view" target="_blank" rel="noopener noreferrer">
             <img
               alt="GitHub followers"
               src="https://img.shields.io/github/followers/azouaoui-med?label=github&style=social"
             />
           </a>
-          <a href="https://twitter.com/azouaoui_med" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/skip-khamvongsa/" target="_blank" rel="noopener noreferrer">
             <img
               alt="Twitter Follow"
-              src="https://img.shields.io/twitter/follow/azouaoui_med?label=twitter&style=social"
+              src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"
             />
           </a>
         </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IntlProvider } from 'react-intl';
 import Layout from './pages/Layout';
-// import './styles/App.scss';
+import './styles/App.scss';
 
 function App() {
   const [locale, setLocale] = useState('en');
