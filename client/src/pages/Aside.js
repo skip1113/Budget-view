@@ -9,7 +9,8 @@ import {
     SidebarFooter,
     SidebarContent,
 } from 'react-pro-sidebar';
-import { FaTachometerAlt, FaGem, FaList, FaGithub, FaRegLaughWink, FaHeart } from 'react-icons/fa';
+import { FaTachometerAlt, FaGem, FaList, FaGithub, FaHeart } from 'react-icons/fa';
+import { GiPayMoney, GiLightBulb } from 'react-icons/gi';
 // import sidebarBg from './assets/bg1.jpg';
 
 const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
@@ -48,13 +49,13 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
                     >
                         {intl.formatMessage({ id: 'Dashboard' })}
                     </MenuItem>
-                    <MenuItem icon={<FaGem />}> {intl.formatMessage({ id: 'Spendings' })}</MenuItem>
+                    <MenuItem icon={<GiPayMoney />}> {intl.formatMessage({ id: 'Spendings' })}</MenuItem>
                 </Menu>
                 <Menu iconShape="circle">
                     <SubMenu
                         suffix={<span className="badge yellow">3</span>}
                         title={intl.formatMessage({ id: 'Savings' })}
-                        icon={<FaRegLaughWink />}
+                        icon={<FaGem />}
                     >
                         <MenuItem>{intl.formatMessage({ id: 'submenu' })} 1</MenuItem>
                         <MenuItem>{intl.formatMessage({ id: 'submenu' })} 2</MenuItem>
@@ -82,7 +83,7 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
                             </SubMenu>
                         </SubMenu>
                     </SubMenu>
-                    <MenuItem icon={<FaGem />}> {intl.formatMessage({ id: 'Tips & Advice' })}</MenuItem>
+                    <MenuItem icon={<GiLightBulb />}> {intl.formatMessage({ id: 'Tips & Advice' })}</MenuItem>
 
                 </Menu>
             </SidebarContent>
