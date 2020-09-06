@@ -1,9 +1,8 @@
 import React from 'react';
-import React from 'react';
 import { useIntl } from 'react-intl';
 import Switch from 'react-switch';
 import { FaHeart, FaBars } from 'react-icons/fa';
-import reactLogo from './assets/logo.svg';
+// import reactLogo from './assets/logo.svg';
 
 const Dashboard = ({
   collapsed,
@@ -21,9 +20,9 @@ const Dashboard = ({
         <FaBars />
       </div>
       <header>
-        <h1>
+        {/* <h1>
           <img width={80} src={reactLogo} alt="react logo" /> {intl.formatMessage({ id: 'title' })}
-        </h1>
+        </h1> */}
         <p>{intl.formatMessage({ id: 'description' })}</p>
         <div className="social-bagdes">
           <a
