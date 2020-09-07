@@ -17,4 +17,4 @@ when you're at a restaurant. Other features are being able to create your own pl
 * jQuery
 * Node
 * HTML
-* SCSS
+* SASS
