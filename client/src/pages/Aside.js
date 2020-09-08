@@ -1,5 +1,5 @@
 import React from 'react';
-import { useIntl } from 'react-intl';
+// import { useIntl } from 'react-intl';
 import {
     ProSidebar,
     Menu,
@@ -14,7 +14,7 @@ import { GiPayMoney, GiLightBulb } from 'react-icons/gi';
 // import sidebarBg from './assets/bg1.jpg';
 
 const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
-    const intl = useIntl();
+    // const intl = useIntl();
     return (
         <ProSidebar
             //   image={image ? sidebarBg : false}
@@ -37,7 +37,8 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
                         whiteSpace: 'nowrap',
                     }}
                 >
-                    {intl.formatMessage({ id: 'budget view' })}
+                    {/* {intl.formatMessage({ id: 'budget view' })} */}
+                    Budget View
                 </div>
             </SidebarHeader>
 
@@ -45,35 +46,47 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
                 <Menu iconShape="circle">
                     <MenuItem
                         icon={<FaTachometerAlt />}
-                        suffix={<span className="badge red">{intl.formatMessage({ id: 'new' })}</span>}
+                        suffix={<span className="badge red">
+                            {/* {intl.formatMessage({ id: 'new' })} */}
+                            New
+                            </span>}
+                        to="/"
                     >
-                        {intl.formatMessage({ id: 'Dashboard' })}
+                        {/* {intl.formatMessage({ id: 'Dashboard' })} */}
+                        Dashboard
                     </MenuItem>
-                    <MenuItem icon={<GiPayMoney />}> {intl.formatMessage({ id: 'Spendings' })}</MenuItem>
+                    <MenuItem icon={<GiPayMoney />} to="/spending" href="/spending"> 
+                    {/* {intl.formatMessage({ id: 'Spendings' })} */}
+                    Spendings
+                    </MenuItem>
                 </Menu>
                 <Menu iconShape="circle">
                     <SubMenu
                         suffix={<span className="badge yellow">3</span>}
-                        title={intl.formatMessage({ id: 'Savings' })}
+                        title="Savings"
+                        // {intl.formatMessage({ id: 'Savings' })}
                         icon={<FaGem />}
+                        to="/saving"
                     >
-                        <MenuItem>{intl.formatMessage({ id: 'submenu' })} 1</MenuItem>
-                        <MenuItem>{intl.formatMessage({ id: 'submenu' })} 2</MenuItem>
-                        <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3</MenuItem>
+                        {/* <MenuItem>{intl.formatMessage({ id: 'submenu' })} 1</MenuItem> */}
+                        {/* <MenuItem>{intl.formatMessage({ id: 'submenu' })} 2</MenuItem> */}
+                        {/* <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3</MenuItem> */}
                     </SubMenu>
                     <SubMenu
                         prefix={<span className="badge gray">3</span>}
-                        title={intl.formatMessage({ id: 'Tip Calculator' })}
+                        title="Tip Calculator"
+                        // {intl.formatMessage({ id: 'Tip Calculator' })}
                         icon={<FaHeart />}
+                        to="/tipcalc"
                     >
-                        <MenuItem>{intl.formatMessage({ id: 'submenu' })} 1</MenuItem>
-                        <MenuItem>{intl.formatMessage({ id: 'submenu' })} 2</MenuItem>
-                        <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3</MenuItem>
+                        {/* <MenuItem>{intl.formatMessage({ id: 'submenu' })} 1</MenuItem> */}
+                        {/* <MenuItem>{intl.formatMessage({ id: 'submenu' })} 2</MenuItem> */}
+                        {/* <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3</MenuItem> */}
                     </SubMenu>
-                    <SubMenu title={intl.formatMessage({ id: 'Info' })} icon={<FaList />}>
-                        <MenuItem>{intl.formatMessage({ id: 'submenu' })} 1 </MenuItem>
-                        <MenuItem>{intl.formatMessage({ id: 'submenu' })} 2 </MenuItem>
-                        <SubMenu title={`${intl.formatMessage({ id: 'submenu' })} 3`}>
+                    <SubMenu title="Info" icon={<FaList />} to="/info">
+                        {/* <MenuItem>{intl.formatMessage({ id: 'submenu' })} 1 </MenuItem> */}
+                        {/* <MenuItem>{intl.formatMessage({ id: 'submenu' })} 2 </MenuItem> */}
+                        {/* <SubMenu title={`${intl.formatMessage({ id: 'submenu' })} 3`}>
                             <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3.1 </MenuItem>
                             <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3.2 </MenuItem>
                             <SubMenu title={`${intl.formatMessage({ id: 'submenu' })} 3.3`}>
@@ -81,9 +94,12 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
                                 <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3.3.2 </MenuItem>
                                 <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3.3.3 </MenuItem>
                             </SubMenu>
-                        </SubMenu>
+                        </SubMenu> */}
                     </SubMenu>
-                    <MenuItem icon={<GiLightBulb />}> {intl.formatMessage({ id: 'Tips & Advice' })}</MenuItem>
+                    <MenuItem icon={<GiLightBulb />} to="/tips"> 
+                    {/* {intl.formatMessage({ id: 'Tips & Advice' })} */}
+                    <h2>Tips & Advice</h2>
+                    </MenuItem>
 
                 </Menu>
             </SidebarContent>
@@ -102,7 +118,10 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
                         rel="noopener noreferrer"
                     >
                         <FaGithub />
-                        <span> {intl.formatMessage({ id: 'viewSource' })}</span>
+                        <span> 
+                            {/* {intl.formatMessage({ id: 'viewSource' })} */}
+                            ViewSource
+                            </span>
                     </a>
                 </div>
             </SidebarFooter>

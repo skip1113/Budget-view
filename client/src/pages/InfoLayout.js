@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Aside from './Aside';
-import Dashboard from './Dashboard';
+import Info from './Info';
 
-export function Layout({ setLocale }) {
+export function InfoLayout({ setLocale }) {
   const [rtl, setRtl] = useState(false);
   const [collapsed, setCollapsed] = useState(false);
   const [image, setImage] = useState(true);
@@ -33,7 +33,7 @@ export function Layout({ setLocale }) {
         toggled={toggled}
         handleToggleSidebar={handleToggleSidebar}
       />
-      <Dashboard
+      <Info
         image={image}
         toggled={toggled}
         collapsed={collapsed}
@@ -47,4 +47,4 @@ export function Layout({ setLocale }) {
   );
 }
 
-export default Layout;
+export default InfoLayout;

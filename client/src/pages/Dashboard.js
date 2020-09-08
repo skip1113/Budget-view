@@ -13,7 +13,7 @@ const Dashboard = ({
   handleRtlChange,
   handleImageChange,
 }) => {
-  const intl = useIntl();
+  // const intl = useIntl();
   return (
     <main>
       <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
@@ -22,9 +22,13 @@ const Dashboard = ({
       <header>
         <h1>
           {/* <img width={80} src={reactLogo} alt="react logo" />  */}
-          {intl.formatMessage({ id: 'Dashboard' })}
+          {/* {intl.formatMessage({ id: 'Dashboard' })} */}
+          Dashboard Hello World
         </h1>
-        <p>{intl.formatMessage({ id: 'Budget View, A financial plan application for everyone.' })}</p>
+        <p>
+          {/* {intl.formatMessage({ id: 'Budget View, A financial plan application for everyone.' })} */}
+          Budget View, A financial plan application for everyone.
+          </p>
         <div className="social-bagdes">
           <a
             href="https://github.com/azouaoui-med/react-pro-sidebar"
@@ -59,7 +63,10 @@ const Dashboard = ({
           onColor="#219de9"
           offColor="#bbbbbb"
         />
-        <span> {intl.formatMessage({ id: 'collapsed' })}</span>
+        <span> 
+          {/* {intl.formatMessage({ id: 'collapsed' })} */}
+          Collapsed
+          </span>
       </div>
       <div className="block">
         <Switch
@@ -72,7 +79,10 @@ const Dashboard = ({
           onColor="#219de9"
           offColor="#bbbbbb"
         />
-        <span> {intl.formatMessage({ id: 'rtl' })}</span>
+        <span> 
+          {/* {intl.formatMessage({ id: 'rtl' })} */}
+          RTL
+          </span>
       </div>
       <div className="block">
         <Switch
@@ -85,7 +95,10 @@ const Dashboard = ({
           onColor="#219de9"
           offColor="#bbbbbb"
         />
-        <span> {intl.formatMessage({ id: 'image' })}</span>
+        <span> 
+          {/* {intl.formatMessage({ id: 'image' })} */}
+          Image
+          </span>
       </div>
 
       <footer>
