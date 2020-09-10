@@ -1,6 +1,6 @@
 import React from 'react';
 import Switch from 'react-switch';
-import { FaHeart, FaBars } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 // import reactLogo from './assets/logo.svg';
 
 const Dashboard = ({
@@ -20,7 +20,7 @@ const Dashboard = ({
       <header>
         <h1>
           {/* <img width={80} src={reactLogo} alt="react logo" />  */}
-          Dashboard Hello World
+          Dashboard
         </h1>
         <p>
           Budget View, A financial plan application for everyone.

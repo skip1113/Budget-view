@@ -1,6 +1,6 @@
 import React from 'react';
 import Switch from 'react-switch';
-import { FaHeart, FaBars } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 // import reactLogo from './assets/logo.svg';
 
 const Saving = ({
