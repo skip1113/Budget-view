@@ -1,5 +1,5 @@
 import React from 'react';
-import { useIntl } from 'react-intl';
+// import { useIntl } from 'react-intl';
 import Switch from 'react-switch';
 import { FaHeart, FaBars } from 'react-icons/fa';
 // import reactLogo from './assets/logo.svg';
@@ -13,7 +13,6 @@ const Info = ({
   handleRtlChange,
   handleImageChange,
 }) => {
-  const intl = useIntl();
   return (
     <main>
       <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
@@ -22,9 +21,9 @@ const Info = ({
       <header>
         <h1>
           {/* <img width={80} src={reactLogo} alt="react logo" />  */}
-          {intl.formatMessage({ id: 'Info' })}
+          Info
         </h1>
-        <p>{intl.formatMessage({ id: 'Budget View, A financial plan application for everyone.' })}</p>
+        <p>Budget View, A financial plan application for everyone.</p>
         <div className="social-bagdes">
           <a
             href="https://github.com/azouaoui-med/react-pro-sidebar"
@@ -59,7 +58,7 @@ const Info = ({
           onColor="#219de9"
           offColor="#bbbbbb"
         />
-        <span> {intl.formatMessage({ id: 'collapsed' })}</span>
+        <span> COLLAPSED</span>
       </div>
       <div className="block">
         <Switch
@@ -72,7 +71,7 @@ const Info = ({
           onColor="#219de9"
           offColor="#bbbbbb"
         />
-        <span> {intl.formatMessage({ id: 'rtl' })}</span>
+        <span>RTL</span>
       </div>
       <div className="block">
         <Switch
@@ -85,7 +84,7 @@ const Info = ({
           onColor="#219de9"
           offColor="#bbbbbb"
         />
-        <span> {intl.formatMessage({ id: 'image' })}</span>
+        <span> IMAGE</span>
       </div>
 
       <footer>

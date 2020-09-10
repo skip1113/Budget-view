@@ -1,5 +1,5 @@
 import React from 'react';
-import { useIntl } from 'react-intl';
+// import { useIntl } from 'react-intl';
 import Switch from 'react-switch';
 import { FaHeart, FaBars } from 'react-icons/fa';
 // import reactLogo from './assets/logo.svg';
