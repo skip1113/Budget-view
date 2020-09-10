@@ -88,7 +88,7 @@ const Saving = ({
 
       <footer>
         <small>
-          © 2020 made with <FaHeart style={{ color: 'red' }} /> by -{' '}
+          © 2020 made with by -{' '}
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/skip1113">
             Skip Khamvongsa
           </a>

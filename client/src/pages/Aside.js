@@ -1,10 +1,9 @@
 import React from 'react';
-// import { useIntl } from 'react-intl';
 import {
     ProSidebar,
     Menu,
     MenuItem,
-    SubMenu,
+    // SubMenu,
     SidebarHeader,
     SidebarFooter,
     SidebarContent,
@@ -14,7 +13,6 @@ import { GiPayMoney, GiLightBulb } from 'react-icons/gi';
 // import sidebarBg from './assets/bg1.jpg';
 
 const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
-    // const intl = useIntl();
     return (
         <ProSidebar
             //   image={image ? sidebarBg : false}
@@ -37,7 +35,6 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
                         whiteSpace: 'nowrap',
                     }}
                 >
-                    {/* {intl.formatMessage({ id: 'budget view' })} */}
                     Budget View
                 </div>
             </SidebarHeader>
@@ -47,46 +44,51 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
                     <MenuItem
                         icon={<FaTachometerAlt />}
                         suffix={<span className="badge red">
-                            {/* {intl.formatMessage({ id: 'new' })} */}
                             New
                             </span>}
                         to="/"
                     >
-                        {/* {intl.formatMessage({ id: 'Dashboard' })} */}
-                        Dashboard
+                        <a href="/">Dashboard</a>
                     </MenuItem>
-                    <MenuItem icon={<GiPayMoney />} to="/spending" href="/spending"> 
-                    {/* {intl.formatMessage({ id: 'Spendings' })} */}
-                    Spendings
+                    <MenuItem icon={<GiPayMoney />}> 
+                    <a href="/spending">Spendings</a>
                     </MenuItem>
                 </Menu>
                 <Menu iconShape="circle">
-                    <SubMenu
+                <MenuItem icon={<FaGem />}> 
+                    <a href="/savings">Savings</a>
+                    </MenuItem>
+                    {/* <SubMenu
                         suffix={<span className="badge yellow">3</span>}
                         title="Savings"
-                        // {intl.formatMessage({ id: 'Savings' })}
                         icon={<FaGem />}
                         to="/saving"
                     >
-                        {/* <MenuItem>{intl.formatMessage({ id: 'submenu' })} 1</MenuItem> */}
-                        {/* <MenuItem>{intl.formatMessage({ id: 'submenu' })} 2</MenuItem> */}
-                        {/* <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3</MenuItem> */}
-                    </SubMenu>
-                    <SubMenu
+                        <a href="/savings">Savings</a>
+                        <MenuItem>{intl.formatMessage({ id: 'submenu' })} 1</MenuItem>
+                        <MenuItem>{intl.formatMessage({ id: 'submenu' })} 2</MenuItem>
+                        <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3</MenuItem>
+                    </SubMenu> */}
+                    <MenuItem icon={<FaHeart />}> 
+                    <a href="/Tipcalc">Tip Calculator</a>
+                    </MenuItem>
+                    {/* <SubMenu
                         prefix={<span className="badge gray">3</span>}
                         title="Tip Calculator"
-                        // {intl.formatMessage({ id: 'Tip Calculator' })}
                         icon={<FaHeart />}
                         to="/tipcalc"
                     >
-                        {/* <MenuItem>{intl.formatMessage({ id: 'submenu' })} 1</MenuItem> */}
-                        {/* <MenuItem>{intl.formatMessage({ id: 'submenu' })} 2</MenuItem> */}
-                        {/* <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3</MenuItem> */}
-                    </SubMenu>
-                    <SubMenu title="Info" icon={<FaList />} to="/info">
-                        {/* <MenuItem>{intl.formatMessage({ id: 'submenu' })} 1 </MenuItem> */}
-                        {/* <MenuItem>{intl.formatMessage({ id: 'submenu' })} 2 </MenuItem> */}
-                        {/* <SubMenu title={`${intl.formatMessage({ id: 'submenu' })} 3`}>
+                        <MenuItem>{intl.formatMessage({ id: 'submenu' })} 1</MenuItem>
+                        <MenuItem>{intl.formatMessage({ id: 'submenu' })} 2</MenuItem>
+                        <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3</MenuItem>
+                    </SubMenu> */}
+                    <MenuItem icon={<FaList />}> 
+                    <a href="/info">Info</a>
+                    </MenuItem>
+                    {/* <SubMenu title="Info" icon={<FaList />} to="/info">
+                        <MenuItem>{intl.formatMessage({ id: 'submenu' })} 1 </MenuItem>
+                        <MenuItem>{intl.formatMessage({ id: 'submenu' })} 2 </MenuItem>
+                        <SubMenu title={`${intl.formatMessage({ id: 'submenu' })} 3`}>
                             <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3.1 </MenuItem>
                             <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3.2 </MenuItem>
                             <SubMenu title={`${intl.formatMessage({ id: 'submenu' })} 3.3`}>
@@ -94,11 +96,10 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
                                 <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3.3.2 </MenuItem>
                                 <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3.3.3 </MenuItem>
                             </SubMenu>
-                        </SubMenu> */}
-                    </SubMenu>
+                        </SubMenu>
+                    </SubMenu> */}
                     <MenuItem icon={<GiLightBulb />} to="/tips"> 
-                    {/* {intl.formatMessage({ id: 'Tips & Advice' })} */}
-                    <h2>Tips & Advice</h2>
+                    <a href="/tips">Tips & Advice</a>
                     </MenuItem>
 
                 </Menu>
@@ -119,7 +120,6 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
                     >
                         <FaGithub />
                         <span> 
-                            {/* {intl.formatMessage({ id: 'viewSource' })} */}
                             ViewSource
                             </span>
                     </a>

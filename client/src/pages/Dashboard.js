@@ -1,5 +1,4 @@
 import React from 'react';
-// import { useIntl } from 'react-intl';
 import Switch from 'react-switch';
 import { FaHeart, FaBars } from 'react-icons/fa';
 // import reactLogo from './assets/logo.svg';
@@ -13,7 +12,6 @@ const Dashboard = ({
   handleRtlChange,
   handleImageChange,
 }) => {
-  // const intl = useIntl();
   return (
     <main>
       <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
@@ -22,11 +20,9 @@ const Dashboard = ({
       <header>
         <h1>
           {/* <img width={80} src={reactLogo} alt="react logo" />  */}
-          {/* {intl.formatMessage({ id: 'Dashboard' })} */}
           Dashboard Hello World
         </h1>
         <p>
-          {/* {intl.formatMessage({ id: 'Budget View, A financial plan application for everyone.' })} */}
           Budget View, A financial plan application for everyone.
           </p>
         <div className="social-bagdes">
@@ -64,7 +60,6 @@ const Dashboard = ({
           offColor="#bbbbbb"
         />
         <span> 
-          {/* {intl.formatMessage({ id: 'collapsed' })} */}
           Collapsed
           </span>
       </div>
@@ -80,7 +75,6 @@ const Dashboard = ({
           offColor="#bbbbbb"
         />
         <span> 
-          {/* {intl.formatMessage({ id: 'rtl' })} */}
           RTL
           </span>
       </div>
@@ -96,14 +90,13 @@ const Dashboard = ({
           offColor="#bbbbbb"
         />
         <span> 
-          {/* {intl.formatMessage({ id: 'image' })} */}
           Image
           </span>
       </div>
 
       <footer>
         <small>
-          © 2020 made with <FaHeart style={{ color: 'red' }} /> by -{' '}
+          © 2020 made by -{' '}
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/skip1113">
             Skip Khamvongsa
           </a>
