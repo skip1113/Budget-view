@@ -21,7 +21,6 @@ function App() {
         {/* </IntlProvider> */}
       </Route> 
       <Route path="/info" exact component={InfoLayout} />
-
       <Route path="/spending" component={SpendingLayout} />
       {/* <Route path="/savings" component={Saving} /> */}
       {/* <Route path="/tipcalc" component={Tipcalc} /> */}
