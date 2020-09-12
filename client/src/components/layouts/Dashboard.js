@@ -1,6 +1,7 @@
 import React from 'react';
 import Switch from 'react-switch';
 import { FaBars } from 'react-icons/fa';
+import "../../styles/App.scss";
 // import reactLogo from './assets/logo.svg';
 
 const Dashboard = ({
@@ -18,7 +19,7 @@ const Dashboard = ({
         <FaBars />
       </div>
       <header>
-        <h1>
+        <h1 id="main-title">
           {/* <img width={80} src={reactLogo} alt="react logo" />  */}
           Dashboard
         </h1>

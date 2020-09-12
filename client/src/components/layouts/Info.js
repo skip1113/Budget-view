@@ -1,6 +1,8 @@
 import React from 'react';
 import Switch from 'react-switch';
 import { FaBars } from 'react-icons/fa';
+import "../../styles/App.scss";
+
 // import reactLogo from './assets/logo.svg';
 
 const Info = ({
@@ -18,11 +20,11 @@ const Info = ({
         <FaBars />
       </div>
       <header>
-        <h1>
+        <h1 id="main-title">
           {/* <img width={80} src={reactLogo} alt="react logo" />  */}
           Info
         </h1>
-        <p>This project was created to let users view and fill their average income and spendings to see how much they are spending versus their 
+        <p id="info-para">This project was created to let users view and fill their average income and spendings to see how much they are spending versus their 
           earnings. I wanted this application to help users, and create something that would have helped me save money and see what I was spending
           wether it be a necssity and luxury. When building this, I always kept High School, and College students in mind. My vision was to
           build something that would have helped me when I was younger and in need of this kind of support, and keep track of where my money
@@ -30,7 +32,7 @@ const Info = ({
           what you want to save. This was built for you to be able to see what you spent your hard earned money on and what the total outcome is 
           after a day, month, year and so on. 
         </p>
-        <p>Having built this site, I wanted to add a tip calculator to simplify calculating tips for your waiter or waitress, wether its your self, a date, 
+        <p id="info-para">Having built this site, I wanted to add a tip calculator to simplify calculating tips for your waiter or waitress, wether its your self, a date, 
           or a large group that you're eating with.
         </p>
         <h5>DISCLAIMER this information is not stored in any database, nor will other users be able to see what you fill out.</h5>

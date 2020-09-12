@@ -91,9 +91,12 @@ body {
         display: flex;
         align-items: center;
         transform: translateX(-20px);
+        margin-left: 10px;
       }
     }
-
+    #info-para {
+      font-size: 20px;
+    }
     footer {
       margin-top: auto;
       color: #888;
