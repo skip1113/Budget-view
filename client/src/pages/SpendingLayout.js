@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Aside from './Aside';
-import Spending from './Spending';
+import Aside from '../components/layouts/Aside';
+import Spending from '../components/layouts/Spending';
 
 export function SpendingLayout({ setLocale }) {
   const [rtl, setRtl] = useState(false);

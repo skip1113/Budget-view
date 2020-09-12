@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Aside from './Aside';
-import Info from './Info';
+import Aside from '../components/layouts/Aside';
+import Info from '../components/layouts/Info';
 
 export function InfoLayout({ setLocale }) {
   const [rtl, setRtl] = useState(false);

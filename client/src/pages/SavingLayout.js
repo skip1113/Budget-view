@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Aside from './Aside';
-import Saving from './Saving';
+import Aside from '../components/layouts/Aside';
+import Saving from '../components/layouts/Saving';
 
 export function SavingLayout({ setLocale }) {
   const [rtl, setRtl] = useState(false);

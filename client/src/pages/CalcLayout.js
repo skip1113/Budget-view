@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Aside from './Aside';
-import Tipcalc from './Tipcalc';
+import Aside from '../components/layouts/Aside';
+import Tipcalc from '../components/layouts/Tipcalc';
 
 export function CalcLayout({ setLocale }) {
   const [rtl, setRtl] = useState(false);

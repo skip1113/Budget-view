@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Aside from './Aside';
-import Dashboard from './Dashboard';
+import Aside from '../components/layouts/Aside';
+import Dashboard from '../components/layouts/Dashboard';
 
 export function Layout({ setLocale }) {
   const [rtl, setRtl] = useState(false);

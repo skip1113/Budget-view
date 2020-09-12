@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Aside from './Aside';
-import Tips from './Tips';
+import Aside from '../components/layouts/Aside';
+import Tips from '../components/layouts/Tips';
 
 export function TipsLayout({ setLocale }) {
   const [rtl, setRtl] = useState(false);
