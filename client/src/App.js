@@ -10,24 +10,54 @@ import Tipcalc from './pages/CalcLayout';
 import Tips from './pages/TipsLayout';
 import './styles/App.scss';
 
-
-function App() {
-  return (
-    <Router history={history}>
-      <Route path="/" exact component={Layout}>
-        {/* <IntlProvider locale={locale}> */}
+// class App extends Component {
+//   state = {
+//     response: '',
+//     post: '',
+//     responseToPost: '',
+//   };
+//   componentDidMount() {
+//     this.callApi()
+//       .then(res => this.setState({ response: res.express }))
+//       .catch(err => console.log(err));
+//   }
+//   callApi = async () => {
+//     const response = await fetch('/api/hello');
+//     const body = await response.json();
+//     if (response.status !== 200) throw Error(body.message);
+//     return body;
+//   };
+//   handleSubmit = async e => {
+//     e.preventDefault();
+//     const response = await fetch('/api/world', {
+//       method: 'POST',
+//       headers: {
+//         'Content-type': 'application/json',
+//       },
+//       body: JSON.stringify({ post: this.state.post }),
+//     });
+//     const body = await response.text();
+//     this.setState({ responseToPost: body });
+//   };
+//   render() {
+    function App() {
+    return (
+      <Router history={history}>
+        <Route path="/" exact component={Layout}>
+          {/* <IntlProvider locale={locale}> */}
           {/* <Layout setLocale={setLocale} /> */}
           {/* <Route path="/" component={Layout} /> */}
-        {/* </IntlProvider> */}
-      </Route> 
-      <Route path="/info" exact component={InfoLayout} />
-      <Route path="/spending" component={SpendingLayout} />
-      <Route path="/savings" component={Saving} />
-      <Route path="/tipcalc" component={Tipcalc} />
-      <Route path="/tips" component={Tips} />
-    </Router>
+          {/* </IntlProvider> */}
+        </Route>
+        <Route path="/info" exact component={InfoLayout} />
+        <Route path="/spending" component={SpendingLayout} />
+        <Route path="/savings" component={Saving} />
+        <Route path="/tipcalc" component={Tipcalc} />
+        <Route path="/tips" component={Tips} />
+      </Router>
 
-  );
-}
+    );
+  }
+
 
 export default App;
