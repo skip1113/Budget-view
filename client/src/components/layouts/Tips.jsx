@@ -2,7 +2,7 @@ import React from 'react';
 import Switch from 'react-switch';
 import { FaBars } from 'react-icons/fa';
 import "../../styles/App.scss";
-
+import { ScrapeBtn } from '../buttons/ButtonList';
 // import reactLogo from './assets/logo.svg';
 
 const Tips = ({
@@ -48,6 +48,10 @@ const Tips = ({
           </a>
         </div>
       </header>
+      {/* Body */}
+      <ScrapeBtn>
+        Scrape Tips
+      </ScrapeBtn>
       <div className="block ">
         <Switch
           height={16}
