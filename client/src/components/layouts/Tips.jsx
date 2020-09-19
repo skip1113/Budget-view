@@ -2,7 +2,7 @@ import React from 'react';
 import Switch from 'react-switch';
 import { FaBars } from 'react-icons/fa';
 import "../../styles/App.scss";
-import { ScrapeBtn } from '../buttons/ButtonList';
+import ScrapeBtn from '../buttons/ButtonList.jsx';
 // import reactLogo from './assets/logo.svg';
 
 const Tips = ({
@@ -24,7 +24,14 @@ const Tips = ({
           {/* <img width={80} src={reactLogo} alt="react logo" />  */}
           Tips & Advice
         </h1>
-        <p>Budget View, A financial plan application for everyone.</p>
+        <p>Tips & Advice Scraped from "blank" Webpage. Click "Scrape Tips" to request more tips and info to this page. These are some articles
+          for the user to gain some knowledge on how to save money and become a successful individual.
+        </p>
+        </header>
+              {/* Body */}
+      <ScrapeBtn>
+        Scrape Tips
+      </ScrapeBtn>
         <div className="social-bagdes">
           <a
             href="https://github.com/azouaoui-med/react-pro-sidebar"
@@ -47,11 +54,9 @@ const Tips = ({
             />
           </a>
         </div>
-      </header>
-      {/* Body */}
-      <ScrapeBtn>
-        Scrape Tips
-      </ScrapeBtn>
+      {/* </header> */}
+
+      <br />
       <div className="block ">
         <Switch
           height={16}
