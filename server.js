@@ -3,7 +3,14 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const axios = require('axios');
 const app = express();
+const cheerio = require('cheerio');
 const port = process.env.PORT || 3001;
+
+app.get("/scrape", function (req, res) {
+  axios.get("https://americasaves.org/").then(function (response) {
+    let $ = cheerio.load(response.data);
+  })
+})
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
