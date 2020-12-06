@@ -38,7 +38,7 @@ const Dashboard = ({
           onColor="#219de9"
           offColor="#bbbbbb"
         />
-        <span> 
+        <span>
           Collapsed
           </span>
       </div>
@@ -53,7 +53,7 @@ const Dashboard = ({
           onColor="#219de9"
           offColor="#bbbbbb"
         />
-        <span> 
+        <span>
           RTL
           </span>
       </div>
@@ -68,32 +68,32 @@ const Dashboard = ({
           onColor="#219de9"
           offColor="#bbbbbb"
         />
-        <span> 
+        <span>
           Image
           </span>
       </div>
       <div className="social-bagdes">
-          <a
-            href="https://github.com/azouaoui-med/react-pro-sidebar"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              alt="GitHub stars"
-              src="https://img.shields.io/github/stars/azouaoui-med/react-pro-sidebar?style=social"
-            />
-          </a>
-          <a
-            href="https://github.com/azouaoui-med/react-pro-sidebar"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              alt="GitHub forks"
-              src="https://img.shields.io/github/forks/azouaoui-med/react-pro-sidebar?style=social"
-            />
-          </a>
-        </div>
+        <a
+          href="https://github.com/azouaoui-med/react-pro-sidebar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            alt="GitHub stars"
+            src="https://img.shields.io/github/stars/azouaoui-med/react-pro-sidebar?style=social"
+          />
+        </a>
+        <a
+          href="https://github.com/azouaoui-med/react-pro-sidebar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            alt="GitHub forks"
+            src="https://img.shields.io/github/forks/azouaoui-med/react-pro-sidebar?style=social"
+          />
+        </a>
+      </div>
       <footer>
         <small>
           © 2020 made by -{' '}
