@@ -25,28 +25,6 @@ const Spending = ({
           Spending
         </h1>
         <p>Budget View, A financial plan application for everyone.</p>
-        <div className="social-bagdes">
-          <a
-            href="https://github.com/azouaoui-med/react-pro-sidebar"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              alt="GitHub stars"
-              src="https://img.shields.io/github/stars/azouaoui-med/react-pro-sidebar?style=social"
-            />
-          </a>
-          <a
-            href="https://github.com/azouaoui-med/react-pro-sidebar"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              alt="GitHub forks"
-              src="https://img.shields.io/github/forks/azouaoui-med/react-pro-sidebar?style=social"
-            />
-          </a>
-        </div>
       </header>
       <div className="block ">
         <Switch
@@ -87,7 +65,28 @@ const Spending = ({
         />
         <span> IMAGE</span>
       </div>
-
+      <div className="social-bagdes">
+        <a
+          href="https://github.com/azouaoui-med/react-pro-sidebar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            alt="GitHub stars"
+            src="https://img.shields.io/github/stars/azouaoui-med/react-pro-sidebar?style=social"
+          />
+        </a>
+        <a
+          href="https://github.com/azouaoui-med/react-pro-sidebar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            alt="GitHub forks"
+            src="https://img.shields.io/github/forks/azouaoui-med/react-pro-sidebar?style=social"
+          />
+        </a>
+      </div>
       <footer>
         <small>
           © 2020 made with by -{' '}

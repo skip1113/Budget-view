@@ -25,35 +25,13 @@ const Tips = ({
           Tips & Advice
         </h1>
         <p>Tips & Advice Scraped from "blank" Webpage. Click "Scrape Tips" to request more tips and info to this page. These are some articles
-          for the user to gain some knowledge on how to save money and become a successful individual.
+        for the user to gain some knowledge on how to save money and become a successful individual.
         </p>
-        </header>
-              {/* Body */}
+      </header>
+      {/* Body */}
       <ScrapeBtn>
         Scrape Tips
       </ScrapeBtn>
-        <div className="social-bagdes">
-          <a
-            href="https://github.com/azouaoui-med/react-pro-sidebar"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              alt="GitHub stars"
-              src="https://img.shields.io/github/stars/azouaoui-med/react-pro-sidebar?style=social"
-            />
-          </a>
-          <a
-            href="https://github.com/azouaoui-med/react-pro-sidebar"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              alt="GitHub forks"
-              src="https://img.shields.io/github/forks/azouaoui-med/react-pro-sidebar?style=social"
-            />
-          </a>
-        </div>
       {/* </header> */}
 
       <br />
@@ -96,7 +74,28 @@ const Tips = ({
         />
         <span>IMAGE</span>
       </div>
-
+      <div className="social-bagdes">
+        <a
+          href="https://github.com/azouaoui-med/react-pro-sidebar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            alt="GitHub stars"
+            src="https://img.shields.io/github/stars/azouaoui-med/react-pro-sidebar?style=social"
+          />
+        </a>
+        <a
+          href="https://github.com/azouaoui-med/react-pro-sidebar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            alt="GitHub forks"
+            src="https://img.shields.io/github/forks/azouaoui-med/react-pro-sidebar?style=social"
+          />
+        </a>
+      </div>
       <footer>
         <small>
           © 2020 made with by -{' '}
