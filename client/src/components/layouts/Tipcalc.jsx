@@ -24,7 +24,7 @@ const Tipcalc = ({
           {/* <img width={80} src={reactLogo} alt="react logo" />  */}
           Tip Calculator
         </h1>
-        <p>Budget View, A financial plan application for everyone.</p>
+        <p>Easy calculator for all your tipping needs. Complete the form and total bill to find what you need to tip your waiter/waitress.</p>
       </header>
       <div className="block ">
         <Switch
