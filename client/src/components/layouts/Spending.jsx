@@ -24,7 +24,7 @@ const Spending = ({
           {/* <img width={80} src={reactLogo} alt="react logo" />  */}
           Spending
         </h1>
-        <p>Budget View, A financial plan application for everyone.</p>
+        <p>Complete the form to see your spendings periodical.</p>
       </header>
       <div className="block ">
         <Switch
