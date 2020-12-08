@@ -24,7 +24,7 @@ const Saving = ({
           {/* <img width={80} src={reactLogo} alt="react logo" />  */}
           Savings
         </h1>
-        <p>Budget View, A financial plan application for everyone.</p>
+        <p>Plan and Create a plan for budgeting and saving money!</p>
       </header>
       <div className="block ">
         <Switch
