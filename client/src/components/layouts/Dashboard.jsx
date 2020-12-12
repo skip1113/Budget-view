@@ -2,6 +2,7 @@ import React from 'react';
 import Switch from 'react-switch';
 import { FaBars } from 'react-icons/fa';
 import "../../styles/App.scss";
+import LinkBtn from '../buttons/Linkbtn';
 // import reactLogo from './assets/logo.svg';
 
 const Dashboard = ({
@@ -27,6 +28,9 @@ const Dashboard = ({
           Budget View, A financial plan application for everyone.
         </p>
       </header>
+      <div className="rowOne">
+        <LinkBtn />
+      </div>
       <div className="block ">
         <Switch
           height={16}
