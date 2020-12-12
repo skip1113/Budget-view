@@ -29,7 +29,9 @@ const Dashboard = ({
         </p>
       </header>
       <div className="rowOne">
-        <LinkBtn />
+        <LinkBtn 
+        title="Hello"
+        />
       </div>
       <div className="block ">
         <Switch
